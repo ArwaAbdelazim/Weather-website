@@ -1,0 +1,52 @@
+.navbar
+{
+    background-color: #1E202B ;
+}
+.active
+{
+    color: #009ad8 !important;
+    border-color: #009ad8 !important;
+}
+.city
+{
+    background-image: url(../img/banner.png);
+    background-size: cover;
+    padding: 100px 0px;
+}
+input , .input-group-text , .weather 
+{
+    background-color: #1E202B !important ;
+}
+.last-sec 
+{
+    background-color: #262936 !important ;
+
+}
+.weather-item
+{
+    background-color: #2b2f3f !important ;
+}
+.weather-item2
+{
+    background-color: #262936 !important ;
+}
+.nav-icons .icon
+{
+    width: 40px;
+    height: 40px;
+    background-color: #1E202B !important ;
+    transition: 0.5s all;
+}
+.nav-icons .icon i
+{
+    color: #009ad8;
+    transition: 0.5s all;
+}
+.nav-icons .icon:hover
+{
+    background-color: #009ad8 !important;
+}
+.nav-icons .icon:hover i
+{
+    color: white !important;
+}

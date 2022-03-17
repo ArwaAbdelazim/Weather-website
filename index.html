@@ -1,0 +1,187 @@
+<html>
+    <head>
+        <title>Weather</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container w-75">
+                <a class="navbar-brand d-flex px-3" href="#">
+                    <img src="img/logo.png" alt="" width="60" height="44" class="mt-1">
+                    <div class="text-center px-2">
+                        <h6 class="fs-5">Weather</h6>
+                        <p class="fs-6">tagline goes here</p>
+                    </div>
+                </a>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+                  <li class="nav-item px-3">
+                    <a class="nav-link active border border-3 rounded-pill px-3" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item px-3">
+                    <a class="nav-link" href="#">News</a>
+                  </li>
+                  <li class="nav-item px-3">
+                    <a class="nav-link" href="#">Live cameras</a>
+                  </li>
+                  <li class="nav-item px-3">
+                    <a class="nav-link" href="#">Photos</a>
+                  </li>
+                  <li class="nav-item px-3">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+        <div class="city text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 mx-auto">
+                        <div class="input-group">
+                            <input type="text" class="form-control text-white" placeholder="Find your location..." aria-label="Recipient's username" aria-describedby="basic-addon2" id="findLocation">
+                            <span class="input-group-text" id="basic-addon2"><button type="button" class="btn btn-primary">Find</button></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="weather py-5 text-white" id="particles-js" >
+            <div class="container">
+                <div class="row gx-0">
+                    <div class="col-md-4 weather-item2">
+                        <div class="d-flex justify-content-between p-3" id="day&date">
+                        
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center weather-item">
+                        <div class="p-3">
+                            <p id="nextDay"></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center weather-item2">
+                        <div class="p-3">
+                            <p id="thirdDay"></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 weather-item">
+                        <div class="p-3">
+                            <h4 id="city1"></h4>
+                            <div class="d-flex justify-content-between py-3">
+                                <div class="w-50 d-flex justify-content-center py-3" id="temp1">
+                            
+                                </div>
+                                <div class="w-50 d-flex justify-content-center py-3">
+                                    <img src="" class="w-50" alt="" id="img1">
+                                </div>
+                            </div>
+                            <p class="py-2 text-primary" id="condition1"></p>
+                            <div class="d-flex justify-content-start ">
+                                <div class="w-25 d-flex justify-content-evenly align-items-center">
+                                    <div class="">
+                                        <img src="img/icon-umberella.png" alt="">
+                                    </div>
+                                    <div class="pt-3">
+                                        <p id="umberella"></p>
+                                    </div>
+                                </div>
+                                <div class="w-25 d-flex justify-content-evenly align-items-center">
+                                    <div class="">
+                                        <img src="img/icon-wind.png" alt="">
+                                    </div>
+                                    <div class="pt-3">
+                                        <p id="wind"></p>
+                                    </div>
+                                </div>
+                                <div class="w-25 d-flex justify-content-evenly align-items-center">
+                                    <div class="">
+                                        <img src="img/icon-compass.png" alt="">
+                                    </div>
+                                    <div class="pt-3">
+                                        <p id="compass"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 weather-item2">
+                        <div class="p-3">
+                            <div class="w-50 d-flex justify-content-center mx-auto py-3">
+                                <img src="" alt="" id="img2">
+                            </div>
+                            <div class="py-3">
+                                <div class="w-50 mx-auto d-flex justify-content-center" id="temp2">
+                                    
+                                </div>
+                                <div class="w-50 mx-auto d-flex justify-content-center py-2" id="temp2min">
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="mx-auto text-center">
+                                <p class="py-2 text-primary" id="condition2"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 weather-item">
+                        <div class="p-3">
+                            <div class="w-50 d-flex justify-content-center mx-auto py-3">
+                                <img src="" alt="" id="img3">
+                            </div>
+                            <div class="py-3">
+                                <div class="w-50 mx-auto d-flex justify-content-center" id="temp3">
+                                   
+                                </div>
+                                <div class="w-50 mx-auto d-flex justify-content-center py-2" id="temp3min">
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="mx-auto text-center">
+                                <p class="py-2 text-primary" id="condition3"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="last-sec py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="input-group">
+                            <input type="text" class="form-control text-white" placeholder="Enter your email to subscribe..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <span class="input-group-text" id="basic-addon2"><button type="button" class="btn btn-primary">Subscribe</button></span>
+                        </div>
+                    </div>
+                    <div class="col-md-4 ">
+                        <div class="nav-icons d-flex justify-content-center align-items-center py-2">
+                            <div class="icon me-2 rounded-circle d-flex justify-content-center align-items-center ">
+                              <i class="fab fa-twitter"></i>
+                            </div>
+                            <div class="icon me-2 rounded-circle d-flex justify-content-center align-items-center ">
+                              <i class="fab fa-facebook-f"></i>
+                            </div>
+                            <div class="icon me-2 rounded-circle d-flex justify-content-center align-items-center ">
+                              <i class="fab fa-instagram"></i>
+                            </div>
+                            <div class="icon me-2 rounded-circle d-flex justify-content-center align-items-center ">
+                              <i class="fab fa-pinterest"></i>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md-10">
+                        <p class="text-white py-5">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/particles.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
